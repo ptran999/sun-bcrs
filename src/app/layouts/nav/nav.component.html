@@ -1,0 +1,86 @@
+<!--
+ * Title: nav.component.html
+ * Author: Phuong Tran
+ * Date: 07/02/2024
+ * Sources: BCRS Starter Project: https://github.com/buwebdev/web-450/tree/master/starter-projects/bcrs
+-->
+
+<!-- Navigation bar with Bootstrap styling  -->
+<nav class="navbar navbar-expand-lg no-print">
+  <!-- Brand/logo  -->
+  <a class="navbar-brand" href="/">
+    <!-- Brand text for the navigation bar. -->
+    <img src="assets/bcrs-logo.jpg" alt="BCRS Logo" width="80" height="70" />
+  </a>
+  <span class="navbar-brand">BCRS</span>
+
+  <!-- Button to toggle navigation links  -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarResponsive"
+    aria-controls="navbarResponsive"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navigation Links -->
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav navbar-nav">
+      <!-- Home Link -->
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+      <!-- FAQ Link -->
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/faq">FAQ</a>
+      </li>
+      <!-- Employee Directory Link-->
+      <li  class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/employee-directory">Directory</a>
+      </li>
+      <!-- Service Link -->
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/service">Service</a>
+      </li>
+      <!-- Register Link for new user -->
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/register">Register</a>
+      </li>
+      <!-- Sign In link for user only -->
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/security/signin">Sign In</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+        >
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li class="dropdown-item profileName"></li>
+          <li class="dropdown-item role">User Role</li>
+          <hr />
+          <li class="dropdown-item">
+            <a routerLink="/" class="dropdown-item menuItem">My Profile</a>
+          </li>
+          <li class="dropdown-item">
+            <a routerLink="/" class="dropdown-item menuItem">User Configuration</a>
+          </li>
+          <li class="dropdown-item">
+            <a routerLink="/" class="dropdown-item menuItem">Purchases By Service</a>
+          </li>
+          <li class="dropdown-item">
+            <a class="dropdown-item menuItem">Log Out</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

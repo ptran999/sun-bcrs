@@ -1,0 +1,81 @@
+<!--
+ * Title: sign-in.component.html
+ * Author: Professor Krasso
+ * Modified By: Phuong Tran
+ * Date: 07/02/2024
+ * Sources: BCRS Starter Project: https://github.com/buwebdev/web-450/tree/master/starter-projects/bcrs
+-->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div>
+  <div class="login-container">
+    <div class="login-card">
+      <h2 class="login-title text-center fw-bold">User Sign In</h2>
+      <hr>
+      <!-- Form for user sign in -->
+       <form
+          >
+
+      <!-- Email Address part -->
+        <div class="form-floating py-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email Address"
+              formControlName="email"
+             />
+
+            <label for="floatingInput">Email address</label>
+                <!-- provide feedback if user don't enter email address -->
+                <div
+                  class="invalid-feedback"
+
+                >
+                Email address is required.
+                </div>
+        </div>
+
+      <!-- Password part -->
+        <div class="form-floating py-2">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+            formControlName="password"
+          />
+          <label for="floatingPassword">Password</label>
+            <!-- provide feedback if user don't enter password -->
+            <div
+              class="invalid-feedback"
+             >
+              Password is required.
+            </div>
+        </div>
+
+      <!-- Forgot password and reset password link part  -->
+        <div class="forgot-password py-2 float-end"><span id="forgot-password"><a href="/">Forgot password?</a></span></div>
+        <br>
+        <div class="text-center btn-dark mt-4">
+          <input
+            type="submit"
+            value="Sign In"
+            class="text-center bg-dark fw-bold width py-2"
+         >
+        </div>
+
+      <!-- Sign In -->
+        <div class="py-2">New to BCRS?<span id="sign-up"><a href="/"> Sign up</a></span></div>
+     </form>
+    </div>
+  </div>
+</div>
+
+
+
